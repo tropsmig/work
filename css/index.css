@@ -185,7 +185,7 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
 	#projects h2 span:first-child { padding-left: 10px }
 	#projects h2 span:last-child { padding-right: 10px }
 	#projects li .rnd { background-size: 900px; background-position: center 90px !important }
-	#projects li { padding: 50px 30px !important; }
+	#projects li { height:100dvh !important; padding: 50px 30px !important; }
 	
 	#contact { padding:0; max-width:100%; height: 100%; backdrop-filter: blur(10px) }
 	#contact .about_ul > li { padding: 60px 30px 100px; }		
