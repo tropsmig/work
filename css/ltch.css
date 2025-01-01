@@ -2906,6 +2906,7 @@ span.logo {
 }
 
 @media screen and (max-width: 460px) {
+    html.change body, html.change { background-color: #666 }
     body.contact.dark #menu_div {
         background: rgb(22 22 22) !important;
     }
