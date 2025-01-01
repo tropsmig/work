@@ -1,0 +1,209 @@
+html, body { height: 100%; font-family:'Jost',sans-serif; color:#313131; min-height: 585px; }
+body { overflow: hidden; background: #c5c5c5; transition: 0.3s  }
+p, a {  text-decoration: none; font-size: 13px; color: #313131;  }
+
+.ko { font-family: 'Pretendard', sans-serif; font-weight: 600 }
+p.ko { font-family: 'Pretendard', sans-serif; font-weight: 500 }
+.en { font-family: 'Jost', sans-serif; font-weight: 600 }
+
+body { overscroll-behavior: contain }
+
+/* loading */
+.container { width:100%; }
+.counter { position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100px; height: 60px; text-align: center;clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); z-index:0  }
+.counter p { position:relative; display:block; transform: translateY(60px); font-size: 50px; font-weight: 600 }
+.ld {  position:absolute; top: 0; left: 0; width:100%; height:100%; box-sizing: border-box; padding: 0 50px; clip-path: polygon(0 200%, 200% 200%, 200% 200%, 0 200%); will-change: transform; z-index:1  }
+.opa, .opa_1, .opa_2 { opacity:0; }
+
+/* header */
+header { z-index: 1000; position: fixed; left:0; top:20px; width:100%; display: flex; justify-content: space-between; padding: 0 20px; box-sizing:border-box; }
+header * { font-size: 14px; font-weight: 600; }
+header h1 { font-size: 20px; margin-top:-2px }
+header h1 a { width: 100px; font-size: 18px; }
+header nav { text-align: right }
+header nav a { margin-left: 25px; display:block; margin-bottom: 20px }
+header > a { width: 100px; text-align: right; }
+
+/* #main */
+#main { position: relative; width: 100%; height: 100% }
+#main h1 { position: absolute; left: 0; top: 50%; margin-top: -25px; transition: 0.3s; width: 100%; font-size: 130px; text-align: center; line-height: 50px; height:50px; }
+
+.rnd { overflow: hidden; border-radius: 1200px; position: relative; transform: translateY(0); width: 40%;margin: 0 auto; border-radius: 1300px; background: #fff; height: 100%; box-sizing: border-box;}
+.rnd .rel { position:absolute; top: 50%; margin-top: -100px; overflow:hidden; max-width: 1200px; left: 50%; margin-left:-600px }
+.rnd p { opacity:0; width: 50%; float:left; padding: 0 50px; font-size: 20px; line-height: 37px; }
+
+/* #projects */
+#projects, #projects ul { height:100% }
+#projects h2 { z-index: 1; position: absolute; margin-top: -25px; top: 50%; left: 0; transform: translateY(20px); opacity: 0; transition: 0.2s; line-height: 100%; height: 50px; line-height: 50px; text-align: center; width:100%;}
+#projects h2, #projects h2 span { transition: 0.1s; font-size: 60px; font-size: 5.2vw !important }
+#projects h2 span { padding: 35px }
+#projects h2 span:first-child { padding-left: 70px }
+#projects h2 span:last-child { padding-right: 70px }
+#projects .dark h2, #projects .dark h2 span { color: #fff; }
+#projects .li_0 h2, #projects .li_0 h2 span { color: #c54708; }
+#projects .li_1 h2, #projects .li_1 h2 span { color: #f1cc2b !important; }
+#projects .li_3 h2, #projects .li_3 h2 span { color: #c8cbce !important; }
+#projects .li_4 h2, #projects .li_4 h2 span { color: #5c488c; }
+#projects .li_5 h2, #projects .li_5 h2 span { color: #398380; }
+#projects .li_6 h2, #projects .li_6 h2 span { color: #244c8f; }
+#projects .li_7 h2, #projects .li_7 h2 span { color: #5b6469; }
+#projects .li_8 h2, #projects .li_8 h2 span { color: #c33b3b; }
+#projects li { position: relative; transition: 0.3s; padding: 100px 80px; width:100%; height: 100%; box-sizing: border-box }
+#projects li .rnd { background-repeat:no-repeat; background-size: 1500px; background-position:center 0 }
+#projects li a { transition: 0.3s; display: block; width: 100%; height: 100%; z-index: 10; font-size: 0; position:absolute; top: 0; left: 0; }
+
+#projects .li_0 .rnd { background-color:#E1E0DF }
+#projects .li_1 .rnd { background-color:#252525 }
+#projects .li_2 .rnd { background-color:#cfcfcf }
+#projects .li_3 .rnd { background-color:#333437 }
+#projects .li_4 .rnd { background-color:#dad8dc }
+#projects .li_5 .rnd { background-color:#dce0e0 }
+#projects .li_6 .rnd { background-color:#dfe2e4 }
+#projects .li_7 .rnd { background-color:#c5c8cb }
+#projects .li_8 .rnd { background-color:#d3d1c8 }
+
+#projects .li_0 .rnd { background-image: url("../images/main/img_energy.webp"); }
+#projects .li_1 .rnd { background-image: url("../images/main/img_ltch.webp") }
+#projects .li_2 .rnd { background-image: url("../images/main/img_jndk.webp") }
+#projects .li_3 .rnd { background-image: url("../images/main/img_hdwk.webp") }
+#projects .li_4 .rnd { background-image: url("../images/main/img_hdhm.webp") }
+#projects .li_5 .rnd { background-image: url("../images/main/img_hddc.webp") }
+#projects .li_6 .rnd { background-image: url("../images/main/img_hd.webp") }
+#projects .li_7 .rnd { background-image: url("../images/main/img_hdck.webp"); }
+#projects .li_8 .rnd { background-image: url("../images/main/img_hdck_tb.webp"); }
+
+
+/* #contact */
+#contact { position: fixed; top: 0; right: -700px; transform: skewX(25deg); width: 100%; max-width: 400px; transition: 0.6s; z-index: 1000; height: auto; box-sizing: border-box; }
+#contact h1 { font-size:0; width: 0; height:0; padding: 0; margin: 0; }
+#contact a.email { transition: 0.3s; width:100%; height: 100px; border-radius: 50px; text-align:center; line-height: 100px; display:block; margin-top: 10px; font-size:16px; background: #313131; color: #fff; margin-bottom:10px }
+#contact a.email:hover { background: #000; }
+body.contact #contact { right: 0; transform: skewX(0); }
+.cont_div { width:100% }
+#contact .about_ul { overflow: hidden; width: 100%; height: 450px; border-radius: 50px 0px 50px 50px; font-size:13px; line-height: 21px; background: rgba(255,255,255,0.4); backdrop-filter: blur(10px);   }
+#contact .about_ul p:first-child { margin-bottom: 15px; }
+#contact .close_btn { display: inline-block; position: absolute; padding: 0; border-radius: 0 0px 0px 70px; color: #fff; font-weight: 600; top: 12px; right: 25px; font-size: 0; width: 50px; height: 50px; }
+#contact .close_btn span { position: absolute; top: 14px; right: 0; display: block; width: 40px; height: 2px; background: #000; transform: rotate(15deg)}
+#contact .close_btn span:last-child { transform: rotate(-15deg)}
+#contact .about_ul { width: 100%; position:relative; }
+#contact .about_ul > li { position:absolute; padding: 65px 50px 100px; box-sizing: border-box; text-align: justify; width:100%; height:100%; }
+.about_ul a { z-index: 100; display: block; box-sizing: border-box; width: 33.3333%; border-radius: 50px; position: absolute; bottom: 0; line-height: 80px; height: 80px; text-align:center; background: #fff}
+.about_ul a:hover { color: #979797 }
+
+.about_ul li.on a:hover { color: #313131 }
+.about_ul h3, .about_ul .rel, .about_ul .line { opacity:0; transform: translateY(50px); transition:0.5s }
+
+.about_ul li.on .rel, .about_ul li.on h3, .about_ul li.on .line { opacity:1; transform: translateY(0); }
+.about_ul li.on a { opacity:0.5; cursor: default; }
+.about_ul .li_0 a { left:0; border-radius:0 0 0 50px }
+.about_ul .li_1 a { z-index: 1000; left:33.3333%; border-radius: 0; }
+.about_ul .li_1 a:before { display:block; content:''; width:1px; height:100%; background: #000; opacity:0.1; position:absolute; left:0;top:0; }
+.about_ul .li_1 a:after { display:block; content:''; width:1px; height:100%; background: #000; opacity:0.1; position:absolute; right:0;top:0; }
+.about_ul .li_2 a { left:66.6666%; border-radius: 0 0 50px 0px }
+.about_ul .li_1, .about_ul .li_0 { text-align:center !important; }
+.about_ul .li_1 li, .about_ul .li_0 li { margin-bottom: 10px; }
+.about_ul h3 { font-size: 18px; text-align: center; margin-top: 27px }
+.about_ul .line { display:block; margin: 30px auto; width:20px; height:1px; background:#000; }
+.about_ul .deco { position:absolute; left: 30px; top: 40px; font-size:60px; font-weight:300 }
+.about_ul .deco:last-child { position:absolute; left: auto; right: 30px; }
+
+
+/* forfun */
+.fun_descript { padding: 10px 0 30px; width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 20px; }
+#forfun .fun_descript p {color: #a9a9a9;}
+#forfun .fun_bg p, .fun_descript p {line-height: 24px;}
+.fun_bg {position: relative;padding-top: 50px;padding-bottom: 100px;}
+#forfun.on {display: block;}
+#forfun {display: none;}
+#forfun .fun_div {overflow-y: scroll;z-index: 2000000000;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(28, 28, 28, .99);}
+#forfun h2, #forfun p {padding-top: 10px;color: #fff;font-size: 14px;}
+#forfun .wd_1920 {position: relative;max-width: 1300px;margin: 0 auto;padding: 50px 50px 100px;box-sizing: border-box;}
+#forfun h2 {transition: .4s ease-in;font-weight: 600;font-size: 20px;color: #fff;margin-bottom: 0;}
+.fun_div {top: 0;left: 0;position: fixed;z-index: 1000000000;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.9)}
+.fun_div img {width: 100%;background-color: #ff6006;margin-bottom: 7px;}
+#forfun .close {z-index: 100000000000;height: 100%;width: 100%;font-size: 0;position: absolute;left: 0;top: 0;}
+.pro_ul li .pro_div:after {content: '';display: block;height: 1px;background: #1c1c1c;position: absolute;top: -37px;transition: .4s;width: 0;left: 0;}
+#forfun .ic {font-size: 0;position: absolute;right: 50px;left: auto;top: 64px;width: 40px;height: 40px;border-radius: 10px;border: 1px solid rgba(255, 255, 255, 0.05);padding-top: 0;background-size: cover;background-image: url("../images/main/ic_fi.webp")}
+
+/* footer */
+footer p { z-index: 10; position:fixed; font-weight: 600; left: 20px; bottom: 20px; }
+footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; bottom: 20px; }
+
+
+
+/* media */
+
+
+@media screen and (max-width: 1420px) {
+	#main h1 { font-size:100px }
+	#projects h2, #projects h2 span { font-size: 50px }
+	#projects h2 span { padding: 25px }
+	#projects h2 span:first-child { padding-left: 50px }
+	#projects h2 span:last-child { padding-right: 50px }
+	#projects li .rnd { background-size: 1400px; background-position:center 60px }
+	#projects li { padding: 100px 50px; }
+}
+
+@media screen and (max-width: 1024px) {
+	#main h1 { font-size:80px }
+	#projects h2, #projects h2 span { font-size: 40px }
+	#projects h2 span { padding: 20px }
+	#projects h2 span:first-child { padding-left: 40px }
+	#projects h2 span:last-child { padding-right: 40px }
+	#projects li .rnd { background-size: 1300px; background-position:center 60px }
+
+	#forfun .wd_1920 { padding: 30px 30px 100px }
+    #forfun .ic { right: 30px; top: 46px; }
+
+    .li_0 .rnd, .rnd,  #projects li .rnd { transform: translateY(0) !important; width:100% !important }
+/*    #projects h2 { line-height:90vh }*/
+/*    #main h1 { line-height: 100vh }*/
+    #projects li { height: 100%; padding: 50px 50px }
+
+}
+
+@media screen and (max-width: 800px) {
+	#main h1 { font-size:60px }
+	#projects h2, #projects h2 span { font-size: 30px }
+	#projects h2 span { padding: 10px }
+	#projects h2 span:first-child { padding-left: 20px }
+	#projects h2 span:last-child { padding-right: 20px }
+	#projects li .rnd { background-size: 1200px; background-position:center 40px }
+
+	#forfun .wd_1920 { padding: 30px 20px 100px }
+    #forfun .ic { right: 20px; top: 45px }
+}
+
+@media screen and (max-width: 660px) {
+	#main h1 { font-size:40px }
+	#projects h2, #projects h2 span { font-size: 23px }
+	#projects li .rnd { background-size: 1000px; background-position: center 50px }
+}
+
+@media screen and (max-width: 450px) {
+	#projects h2 span { padding: 5px }
+	#projects h2 span:first-child { padding-left: 10px }
+	#projects h2 span:last-child { padding-right: 10px }
+	#projects li .rnd { background-size: 900px; background-position: center 90px !important }
+	#projects li { padding: 50px 30px !important; }
+	
+	#contact { padding:0; max-width:100%; height: 100%; backdrop-filter: blur(10px) }
+	#contact .about_ul > li { padding: 60px 30px 100px; }		
+	.cont_div { width: 100%; height: 100%; padding-bottom: 110px; box-sizing: border-box; }
+	#contact .about_ul { height:100%; border-radius: 0 0px 50px 50px; } 
+	.about_ul li.li_0 .rel, .about_ul li.li_1 .rel { position: absolute; top: 50%; width: 100%; box-sizing: border-box; margin-top: -40px; left: 0; }
+	.about_ul li.li_0 h3, .about_ul li.li_1 h3 { position: absolute; left: 0; top: 50%; width: 100%; margin-top: -150px; }
+	.about_ul li.li_0 .line, .about_ul li.li_1 .line { position: absolute; left: 50%; top: 50%; margin-top: -84px; margin-left: -10px;}
+	#contact a.email { position: fixed; left:0; bottom:0; margin-bottom:0; }
+	body.contact { overflow:hidden !important }
+	.cont_div { padding-bottom: 100px }
+	#contact a.email { height:90px; line-height: 90px; }
+}
+@media screen and (max-height: 800px) {
+	#projects li .rnd { background-position:center 0 }
+
+}
+@media screen and (max-height: 700px) {
+	#projects li .rnd { background-position:center -50px }
+
+}
