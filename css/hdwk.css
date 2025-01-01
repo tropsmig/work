@@ -1,4 +1,4 @@
-html.change, html.change body {background-change: #66696d}
+html.change, html.change body {background-change: #66696d !important; }
 
 #main .main_text ul li,#wrapper,.dark,.dark .ld_bg,body,html {
     background: #1c1d1f
