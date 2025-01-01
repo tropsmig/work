@@ -1,3 +1,4 @@
+html, body {background-color:#ffffff}
 #content_4 .ch_ul li,#target .description_div,.age_ul li li,.content_div>ul>li,.content_div>ul>li .grey_bg,.gen_ul.ic_p,.guide_div .grey_bg,.guide_div .grey_bg>.des,.guide_ul li.font_li .brdr,.guide_ul li.main_li .brdr,.guide_ul li.web_li,.res_ui,.res_ui li,.target_ul>li {
     box-sizing: border-box
 }
