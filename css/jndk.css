@@ -1,3 +1,5 @@
+html.change body.open {background-color: #000 }
+
 #wrapper,
 .age_li p span,
 .gender_li p span,
