@@ -198,7 +198,7 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
 	#contact a.email { position: fixed; left:0; bottom:0; margin-bottom:0; }
 	body.contact { overflow:hidden !important }
 	.cont_div { padding-bottom: 90px }
-	#contact a.email { height:90px; line-height: 90px; }
+	#contact a.email { height:90px; line-height: 90px; border-radius: 0 }
 }
 @media screen and (max-height: 800px) {
 	#projects li .rnd { background-position:center 0 }
