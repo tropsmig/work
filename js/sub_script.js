@@ -104,19 +104,19 @@ $(document).ready(function(){
 
 	// Close menu by pressing the ESC key.
 	$(document).keyup(function (e) {
-	  if ($('body').hasClass('open') && e.keyCode === 27) { // ESC
-	    $("body").removeClass("open");
+	  if ($('html').hasClass('open') && e.keyCode === 27) { // ESC
+	    $("html").removeClass("open");
 	  }
 	});
 
 
 	$('.burger a').click(function(){
-		$("body").toggleClass("open");
+		$("html").toggleClass("open");
 
 		return false;
 	});
 	$("#menu_div").click(function(){
-		$("body").removeClass("open");
+		$("html").removeClass("open");
 
 	});
 
@@ -174,6 +174,16 @@ $(document).ready(function(){
 		}
 
 	});
+
+
+	
+
+
+
+
+});
+
+
 
 
 	
