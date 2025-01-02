@@ -2,6 +2,9 @@
 .dark #menu_div { background-color: rgba(22,22,22,0.5) !important }
 .dark #menu_div ul li a { background-color: rgba(37,37,37,1) !important }
 #main .main_bg p, #main .main_bg p span { color: #f1cc2b; }
+
+html.change, html.change body, html.change #gnb, .container, html.open.change, html.open.change body { background:#666; }
+
 .content_ul li,.main {
     position: relative
 }
@@ -24,7 +27,7 @@
     box-sizing: border-box
 }
 
-.dark .ld_bg,html {
+body, html {
     background: #161616
 }
 
@@ -2906,10 +2909,11 @@ span.logo {
 }
 
 @media screen and (max-width: 460px) {
-    html.change body, html.change { background-color: #666 }
     body.contact.dark #menu_div {
         background: rgb(22 22 22) !important;
     }
+
+    html.open body.dark #menu_div { background: #161616!important }
 
     #content_7 .img_title_div,#img_title_1 .img_title_div,#img_title_2 .img_title_div {
         padding-top:150px

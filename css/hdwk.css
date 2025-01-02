@@ -1,5 +1,3 @@
-html.change, html.change body {background-change: #66696d !important; }
-
 #main .main_text ul li,#wrapper,.dark,.dark .ld_bg,body,html {
     background: #1c1d1f
 }
@@ -7,7 +5,7 @@ html.change, html.change body {background-change: #66696d !important; }
 .dark #menu_div { background-color: rgba(28,29,31,0.5) !important }
 .dark #menu_div ul li a { background-color: rgba(51,52,55,1) !important }
 
-html.change, html.change #gnb, .container { background: #66696d; }
+html.change, html.change body, html.change #gnb, .container, html.open.change, html.open.change body { background:#66696d; }
 
 #main .main_bg p, #main .main_bg p span { color: #c8cbce; }
 
@@ -1994,6 +1992,7 @@ html.change, html.change #gnb, .container { background: #66696d; }
 }
 
 @media screen and (max-width: 460px) {
+    html.open body.dark #menu_div { background: #1c1d1f !important }
     body.contact.dark #menu_div { background-color: #1c1d1f !important }
     #content_3 .content_dd,#content_5 .content_dd {
         padding:0 20px

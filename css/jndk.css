@@ -1,5 +1,3 @@
-html.change body.open {background-color: #000 }
-
 #wrapper,
 .age_li p span,
 .gender_li p span,
@@ -19,7 +17,7 @@ span {
     color: #fff
 }
 
-html.change, html.change #gnb, .container { background:#a7a7a7; }
+html.change, html.change body, html.change #gnb, .container, html.open.change, html.open.change body { background:#a7a7a7; }
 
 #main .main .main_bg { border-radius: 0px }
 #main .main_bg p, #main .main_bg p span { color: #000; }
@@ -74,7 +72,7 @@ html.change, html.change #gnb, .container { background:#a7a7a7; }
     -backdrop-filter: blur(20px)
 }
 
-.dark .ld_bg,
+body,
 html {
     background: #000
 }
