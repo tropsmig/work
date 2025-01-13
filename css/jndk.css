@@ -1913,7 +1913,7 @@ body.open .nav .burger a span {
     .pos_ab { transform: translateY(30%) scale(1.1); margin-left: -142px; margin-top: -274px; }
 
 
-    .mob_img em { width: 40px; height: 40px; left: 45px; }
+    .mob_img em { width: 40px; height: 40px; left: 56px; top: 183px; }
     .mob_img em.two { bottom: 60px;  margin-left:-20px }
     .mob_img em.three { top: 83px; margin-left:-20px }
 
